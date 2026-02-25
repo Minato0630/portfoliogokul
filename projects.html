@@ -29,7 +29,7 @@
   <!-- MAIN -->
   <main class="container">
 
-    <!-- ===================== PROJECTS BODY ===================== -->
+    <!-- ===================== PROJECTS BODY =  <main class==================== -->
     <section class="projects-hero filter-scope">
 
 
@@ -48,7 +48,12 @@
       <!-- PROJECT GRID -->
       <div class="project-grid">
 
-        <article class="project-card hover-tilt" data-type="web">
+        <article class="project-card hover-tilt" data-type="web" 
+          data-title="KNOWZILLA — Online Quiz Portal"
+          data-description="Web-based quiz system with real-time scoring. Features include user authentication, multiple quiz categories, timed assessments, instant results, and leaderboard. Built with modern web technologies for seamless user experience."
+          data-image="assets/proj1.png"
+          data-tech="HTML,CSS,JavaScript,Node.js"
+          data-link="#">
           <img src="assets/proj1.png" alt="Knowzilla">
           <div class="proj-body">
             <h3>KNOWZILLA — Online Quiz Portal</h3>
@@ -56,10 +61,16 @@
             <div class="proj-meta">
               <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
+            <button class="view-details-btn open-modal-btn">View Details</button>
           </div>
         </article>
 
-        <article class="project-card hover-tilt" data-type="game">
+        <article class="project-card hover-tilt" data-type="game" 
+          data-title="Ryuk Running Game"
+          data-description="Endless runner browser game featuring dynamic obstacles, score tracking, and increasing difficulty levels. Immersive gameplay with smooth animations and retro-inspired visuals."
+          data-image="assets/proj3.png"
+          data-tech="HTML,CSS,JavaScript,Canvas API"
+          data-link="#">
           <img src="assets/proj3.png" alt="Ryuk Game">
           <div class="proj-body">
             <h3>Ryuk Running Game</h3>
@@ -67,6 +78,7 @@
             <div class="proj-meta">
               <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
+            <button class="view-details-btn open-modal-btn">View Details</button>
           </div>
         </article>
 
@@ -93,36 +105,54 @@
       <!-- CERTIFICATION GRID -->
       <div class="project-grid">
 
-        <article class="project-card hover-tilt" data-type="database">
-          <img src="assets/profile.jpg" alt="MongoDB">
+        <article class="project-card hover-tilt" data-type="database" 
+          data-title="MongoDB Basics for Students"
+          data-description="Comprehensive NoSQL fundamentals and CRUD operations certification. Covers database design, aggregation pipelines, indexing, and real-world application of MongoDB in modern web development."
+          data-image="assets/profile1.jpg"
+          data-tech="MongoDB,NoSQL,Database Design"
+          data-link="#">
+          <img src="assets/profile1.jpg" alt="MongoDB">
           <div class="proj-body">
             <h3>MongoDB Basics for Students</h3>
             <p>NoSQL fundamentals and CRUD operations.</p>
             <div class="proj-meta">
               <span>MongoDB</span><span>NoSQL</span>
             </div>
+            <button class="view-details-btn open-modal-btn">View Details</button>
           </div>
         </article>
 
-        <article class="project-card hover-tilt" data-type="design">
-          <img src="assets/profile.jpg" alt="UI UX">
+        <article class="project-card hover-tilt" data-type="design" 
+          data-title="UI/UX Design MasterClass"
+          data-description="Complete user interface and experience design principles certification. Includes wireframing, prototyping, user research, design systems, and hands-on experience with industry-standard tools."
+          data-image="assets/profile1.jpg"
+          data-tech="UI Design,UX Research,Figma"
+          data-link="#">
+          <img src="assets/profile1.jpg" alt="UI UX">
           <div class="proj-body">
             <h3>UI/UX Design MasterClass</h3>
             <p>User interface and experience design principles.</p>
             <div class="proj-meta">
               <span>UI</span><span>UX</span>
             </div>
+            <button class="view-details-btn open-modal-btn">View Details</button>
           </div>
         </article>
 
-        <article class="project-card hover-tilt" data-type="analysis">
-          <img src="assets/profile.jpg" alt="Data Analyst">
+        <article class="project-card hover-tilt" data-type="analysis" 
+          data-title="Data Analyst Certification"
+          data-description="Professional data analysis and problem-solving skills certification. Covers data visualization, statistical analysis, Excel advanced functions, and business intelligence reporting."
+          data-image="assets/profile1.jpg"
+          data-tech="Data Analysis,Excel,Visualization"
+          data-link="#">
+          <img src="assets/profile1.jpg" alt="Data Analyst">
           <div class="proj-body">
             <h3>Data Analyst Certification</h3>
             <p>Data analysis and problem-solving skills.</p>
             <div class="proj-meta">
               <span>Analytics</span><span>Data</span>
             </div>
+            <button class="view-details-btn open-modal-btn">View Details</button>
           </div>
         </article>
 
@@ -131,6 +161,17 @@
 
   </main>
 
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-inner">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modalContent" class="modal-content">
+        <!-- Content will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
@@ -138,7 +179,7 @@
     </div>
   </footer>
 
-  <!-- SCRIPT (UNCHANGED) -->
+  <!-- SCRIPT -->
   <script src="script.js"></script>
 </body>
 </html>

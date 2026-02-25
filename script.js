@@ -71,19 +71,69 @@ document.querySelectorAll('.filters').forEach(filterGroup => {
 // Modal behavior
 const modal = document.getElementById('modal');
 const modalContent = document.getElementById('modalContent');
-document.querySelectorAll('.open-modal').forEach(btn=> btn.addEventListener('click', ()=> openProjectModal(btn.dataset.id)));
-document.querySelectorAll('.modal-close').forEach(x=> x.addEventListener('click', ()=> modal && modal.setAttribute('aria-hidden','true')));
-modal && modal.addEventListener('click', e => { if(e.target === modal) modal.setAttribute('aria-hidden','true'); });
+const modalClose = document.querySelector('.modal-close');
+const modalOverlay = document.querySelector('.modal-overlay');
 
-function openProjectModal(id){
-  const map = {
-    '1': { title:'Public Transport Tracker', body:'Real-time tracker with maps, ETA and route planning. Built using vanilla JS + REST APIs.' },
-    '2': { title:'Knowzilla Presentation', body:'PowerPoint developed from the Knowzilla report using a professional Canva template.' },
-    '3': { title:'City Services Prototype', body:'Android prototype including transport tracker, garbage pickup alerts and facility locator.' }
-  };
-  const p = map[id] || { title:'Project', body:'Details coming soon.' };
-  modalContent && (modalContent.innerHTML = `<h3>${p.title}</h3><p>${p.body}</p><p class="muted"><strong>Tech:</strong> JS • Node • Android</p>`);
-  modal && modal.setAttribute('aria-hidden','false');
+// Open modal when clicking "View Details" button
+document.querySelectorAll('.open-modal-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const card = btn.closest('.project-card');
+    openModal(card);
+  });
+});
+
+// Close modal events
+if (modalClose) {
+  modalClose.addEventListener('click', closeModal);
+}
+if (modalOverlay) {
+  modalOverlay.addEventListener('click', closeModal);
+}
+if (modal) {
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+}
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal && modal.getAttribute('aria-hidden') === 'false') {
+    closeModal();
+  }
+});
+
+function openModal(card) {
+  if (!card || !modal || !modalContent) return;
+
+  const title = card.dataset.title || 'Project';
+  const description = card.dataset.description || 'Details coming soon.';
+  const image = card.dataset.image || 'assets/profile1.jpg';
+  const tech = card.dataset.tech || '';
+  const link = card.dataset.link || '#';
+
+  const techTags = tech.split(',').map(t => `<span class="tech-tag">${t.trim()}</span>`).join('');
+
+  modalContent.innerHTML = `
+    <div class="modal-image">
+      <img src="${image}" alt="${title}">
+    </div>
+    <div class="modal-details">
+      <h3>${title}</h3>
+      <p>${description}</p>
+      <div class="modal-tech">${techTags}</div>
+      <a href="${link}" class="modal-link" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+  `;
+
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  if (!modal) return;
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
 }
 
 // Contact form post
