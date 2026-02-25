@@ -667,74 +667,86 @@ button, a {
 }
 
 /* =========================
-   Mobile View Fix
+   FINAL MOBILE HERO FIX
 ========================= */
-@media (max-width: 768px) {
 
-  /* Container fix */
-  .container,
-  .hero,
-  .home,
-  section {
-    width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+@media (max-width: 600px) {
+
+  /* HEADER CLEANUP */
+  .site-header {
+    padding: 6px 0;
   }
 
-  /* Hero heading */
-  .hero h1,
-  .hero-title {
-    font-size: 28px;
-    line-height: 1.3;
-    text-align: center;
+  .header-inner {
+    gap: 6px;
   }
 
-  /* Subtitle */
-  .hero p,
-  .hero-subtitle {
-    font-size: 15px;
-    text-align: center;
+  .brand a {
+    font-size: 1.05rem;
   }
 
-  /* Buttons stack */
-  .hero-buttons,
-  .btn-group {
+  .main-nav {
+    gap: 8px;
+  }
+
+  /* HERO SPACING FIX */
+  .hero {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .hero-grid {
+    gap: 20px;
+  }
+
+  /* HERO TEXT */
+  .neon-heading {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+
+  .lead {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  /* BUTTON STACK FIX */
+  .hero-ctas {
     display: flex;
     flex-direction: column;
-    gap: 12px;
     align-items: center;
+    gap: 10px;
   }
 
-  .hero-buttons button,
-  .hero-buttons a {
+  .hero-ctas .btn {
     width: 100%;
-    max-width: 280px;
+    max-width: 260px;
   }
 
-  /* Stats cards */
-  .stats,
-  .stats-container {
-    display: grid;
-    grid-template-columns: 1fr;
+  /* STATS – ONE PER ROW */
+  .quick-stats {
+    flex-direction: column;
+    align-items: center;
     gap: 12px;
+    margin-top: 18px;
   }
 
-  /* Profile image */
-  .profile-img,
-  .hero img {
-    width: 160px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
-}
-@media (max-width: 768px) {
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
+  .quick-stats li {
+    width: 100%;
+    max-width: 260px;
   }
 
-  nav ul li {
-    margin: 6px 10px;
+  /* AVATAR SECTION */
+  .avatar-frame {
+    width: 130px;
+    height: 130px;
+    margin-top: 8px;
+  }
+
+  /* REMOVE ANY ACCIDENTAL SIDE PUSH */
+  body {
+    overflow-x: hidden;
   }
 }
