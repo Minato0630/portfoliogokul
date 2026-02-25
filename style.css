@@ -750,3 +750,41 @@ button, a {
     overflow-x: hidden;
   }
 }
+
+/* Desktop hover only */
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover,
+  .nav-link:hover,
+  .project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3);
+  }
+}
+
+/* Mobile touch feedback */
+@media (hover: none) and (pointer: coarse) {
+
+  .btn:active,
+  .nav-link:active,
+  .project-card:active {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    color: #021;
+    transform: scale(0.97);
+  }
+
+  .btn:focus-visible,
+  .nav-link:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,210,255,0.35);
+  }
+}
+
+/* Disable hover styles on touch devices */
+@media (hover: none) {
+  .btn:hover,
+  .nav-link:hover,
+  .project-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
