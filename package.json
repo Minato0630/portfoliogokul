@@ -4,9 +4,12 @@
   "private": true,
   "description": "Gokul S Portfolio Website (Vercel Static + Serverless)",
   "scripts": {
-    "build": "echo \"No build step needed\""
+    "build": "echo \"No build step needed\"",
+    "start": "node server.js"
   },
   "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
     "mongodb": "^6.5.0"
   }
 }

@@ -10,7 +10,6 @@
 <body class="theme-c">
   <canvas id="heroParticles" class="particles-canvas" aria-hidden="true"></canvas>
 
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
@@ -21,23 +20,18 @@
         <a href="about.html" class="nav-link">About</a>
         <a href="projects.html" class="nav-link active">Projects</a>
         <a href="contact.html" class="nav-link">Contact</a>
-       <button id="themeToggle4" class="icon-btn" aria-label="Toggle theme">🌓</button>
+        <button id="themeToggle4" class="icon-btn" aria-label="Toggle theme">🌓</button>
       </nav>
     </div>
   </header>
 
-  <!-- MAIN -->
   <main class="container">
-
-    <!-- ===================== PROJECTS BODY =  <main class==================== -->
     <section class="projects-hero filter-scope">
-
-
       <div class="section-head">
-        <h2>Projects</h2>
-        <p class="muted">Web and application projects</p>
-
-        <!-- PROJECT FILTERS -->
+        <div>
+          <h2>Projects</h2>
+          <p class="muted">Academic and hands-on software projects</p>
+        </div>
         <div class="filters">
           <button class="filter active" data-filter="all">All</button>
           <button class="filter" data-filter="web">Web</button>
@@ -45,143 +39,150 @@
         </div>
       </div>
 
-      <!-- PROJECT GRID -->
       <div class="project-grid">
-
-        <article class="project-card hover-tilt" data-type="web" 
+        <article class="project-card hover-tilt" data-type="web"
           data-title="KNOWZILLA — Online Quiz Portal"
-          data-description="Web-based quiz system with real-time scoring. Features include user authentication, multiple quiz categories, timed assessments, instant results, and leaderboard. Built with modern web technologies for seamless user experience."
+          data-description="KNOWZILLA is a full-stack quiz portal created as an academic project. It supports user authentication, quiz participation, instant evaluation, and a structured interface for online assessment workflows. The project reflects practical full-stack development using core web technologies."
           data-image="assets/porj1.jpg"
-          data-tech="HTML,CSS,JavaScript,Node.js"
-          data-link="https://github.com/Minato0630/KNOWZILLA.git">
+          data-tech="HTML,CSS,JavaScript,Node.js,Quiz System,Authentication"
+          data-link="https://knowzilla-deploy.vercel.app/"
+          data-link-label="View Project">
           <img src="assets/porj1.jpg" alt="Knowzilla">
           <div class="proj-body">
             <h3>KNOWZILLA — Online Quiz Portal</h3>
-            <p>Web-based quiz system with real-time scoring.</p>
+            <p>Full-stack quiz system with authentication, participation flow, and result evaluation.</p>
             <div class="proj-meta">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span>
             </div>
             <button class="view-details-btn open-modal-btn">View Details</button>
           </div>
         </article>
 
-        <article class="project-card hover-tilt" data-type="game" 
+        <article class="project-card hover-tilt" data-type="web"
+          data-title="Anime Short Video App"
+          data-description="Developed a full-stack web application using React for the frontend and Node.js/Express for the backend, with MongoDB and Mongoose for data modeling and persistence. Implemented media upload handling with Multer, client-side routing with React Router, REST APIs for auth and video actions, and deployment-ready configuration for Vercel."
+          data-image="assets/anime-shortvideo.png"
+          data-tech="React,Node.js,Express,MongoDB,Mongoose,Multer,React Router,REST API,Vercel"
+          data-link="https://anime-shortvideo.vercel.app/"
+          data-link-label="View Project">
+          <a href="https://anime-shortvideo.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/anime-shortvideo.png" alt="Anime Short Video App">
+          </a>
+          <div class="proj-body">
+            <h3>Anime Short Video App</h3>
+            <p>Full-stack short video platform with reel-style viewing, authentication, uploads, likes, saves, and profile customization.</p>
+            <div class="proj-meta">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+            </div>
+            <button class="view-details-btn open-modal-btn">View Details</button>
+          </div>
+        </article>
+
+        <article class="project-card hover-tilt" data-type="game"
           data-title="Ryuk Running Game"
-          data-description="Ryuk, resembling the Dino Runner, sprints through a dark, eerie landscape, collecting
-glowing coins and dodging obstacles to preserve his three lives."
-          data-image="assets/proj2.png"
-          data-tech="Java,Java Applet"
-          data-link="#">
-          <img src="assets/proj2.png" alt="Ryuk Game">
+          data-description="Ryuk Running Game is a Java-based endless runner inspired by the fast-paced style of classic side-scrolling obstacle games. The gameplay uses a dark anime-inspired theme, includes obstacle avoidance, coin collection, and a three-life system, and demonstrates creative front-end game logic."
+          data-image="assets/ryuk-running-bg.png"
+          data-tech="Java,Java Applet,Game Logic,UI"
+          data-link="https://ryukruning-deploy.vercel.app/"
+          data-link-label="Project Summary">
+          <a href="https://ryukruning-deploy.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/ryuk-running-bg.png" alt="Ryuk Running Game">
+          </a>
           <div class="proj-body">
             <h3>Ryuk Running Game</h3>
-            <p>Endless runner browser game Based on the Death-Note Anime.</p>
+            <p>Java-based endless runner themed around anime-inspired gameplay and obstacle handling.</p>
             <div class="proj-meta">
-              <span>Java</span><span>JavaApplet</span>
+              <span>Java</span><span>Applet</span><span>Game</span>
             </div>
             <button class="view-details-btn open-modal-btn">View Details</button>
           </div>
         </article>
-
       </div>
     </section>
 
-    <!-- ===================== CERTIFICATIONS BODY ===================== -->
     <section class="projects-hero filter-scope">
-
-
       <div class="section-head">
-        <h2>Certifications</h2>
-        <p class="muted">Professional certifications & design skills</p>
-
-        <!-- CERTIFICATION FILTERS -->
+        <div>
+          <h2>Certifications</h2>
+          <p class="muted">All certificate files added to the portfolio project</p>
+        </div>
         <div class="filters">
           <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
           <button class="filter" data-filter="database">Database</button>
-          <button class="filter" data-filter="design">Design</button>
-          <button class="filter" data-filter="analysis">Analysis</button>
-          <button class="filter" data-filter="others">Others</button>
+          <button class="filter" data-filter="training">Training</button>
         </div>
       </div>
 
-      <!-- CERTIFICATION GRID -->
       <div class="project-grid">
-
-        <article class="project-card hover-tilt" data-type="database" 
-          data-title="MongoDB Basics for Students"
-          data-description="Comprehensive NoSQL fundamentals and CRUD operations certification. Covers database design, aggregation pipelines, indexing, and real-world application of MongoDB in modern web development."
-          data-image="assets/certificate.jpg"
-          data-tech="MongoDB,NoSQL,Database Design"
-          data-link="#">
-          <img src="assets/profile1.jpg" alt="MongoDB">
+        <article class="project-card hover-tilt" data-type="database" data-title="MongoDB Basics for Students" data-description="MongoDB learning certificate showing database-oriented training and student-level exposure to NoSQL concepts. The file metadata indicates completion on 30 July 2025." data-image="assets/cert-mongodb.png" data-tech="MongoDB,NoSQL,Database" data-link="certificates/GOKUL%20mangodb%20certificate.pdf" data-link-label="Open Certificate">
+          <img src="assets/cert-mongodb.png" alt="MongoDB certificate">
           <div class="proj-body">
-            <h3>MongoDB Basics for Students</h3>
-            <p>NoSQL fundamentals and CRUD operations.</p>
-            <div class="proj-meta">
-              <span>MongoDB</span><span>NoSQL</span>
-            </div>
+            <h3>MongoDB Basics</h3>
+            <p>Database fundamentals and NoSQL-focused student certificate.</p>
+            <div class="proj-meta"><span>MongoDB</span><span>NoSQL</span></div>
             <button class="view-details-btn open-modal-btn">View Details</button>
           </div>
         </article>
 
-        <article class="project-card hover-tilt" data-type="design" 
-          data-title="UI/UX Design MasterClass"
-          data-description="Complete user interface and experience design principles certification. Includes wireframing, prototyping, user research, design systems, and hands-on experience with industry-standard tools."
-          data-image="assets/profile1.jpg"
-          data-tech="UI Design,UX Research,Figma"
-          data-link="#">
-          <img src="assets/profile1.jpg" alt="UI UX">
+        <article class="project-card hover-tilt" data-type="training" data-title="UI/UX Training — Novitech" data-description="UI/UX design certification from Novitech, highlighting interface design awareness, visual thinking, and user experience fundamentals." data-image="assets/cert-uiux.png" data-tech="UI,UX,Design,Novitech" data-link="certificates/GOKUL%20S-UI_UX-NOVITECH.pdf" data-link-label="Open Certificate">
+          <img src="assets/cert-uiux.png" alt="UI UX certificate">
           <div class="proj-body">
-            <h3>UI/UX Design MasterClass</h3>
-            <p>User interface and experience design principles.</p>
-            <div class="proj-meta">
-              <span>UI</span><span>UX</span>
-            </div>
+            <h3>UI/UX Training</h3>
+            <p>Novitech certificate covering interface and user experience topics.</p>
+            <div class="proj-meta"><span>UI</span><span>UX</span></div>
             <button class="view-details-btn open-modal-btn">View Details</button>
           </div>
         </article>
 
-        <article class="project-card hover-tilt" data-type="analysis" 
-          data-title="Data Analyst Certification"
-          data-description="Professional data analysis and problem-solving skills certification. Covers data visualization, statistical analysis, Excel advanced functions, and business intelligence reporting."
-          data-image="assets/profile1.jpg"
-          data-tech="Data Analysis,Excel,Visualization"
-          data-link="#">
-          <img src="assets/profile1.jpg" alt="Data Analyst">
+        <article class="project-card hover-tilt" data-type="web" data-title="Full Stack Development — Novitech" data-description="Novitech full stack development certificate documenting web-development-oriented training relevant to front-end and back-end fundamentals." data-image="assets/cert-fsd-novitech.png" data-tech="Full Stack,Web Development,Novitech" data-link="certificates/GOKUL%20S-FSD-NOVITECH.pdf" data-link-label="Open Certificate">
+          <img src="assets/cert-fsd-novitech.png" alt="Full stack certificate">
           <div class="proj-body">
-            <h3>Data Analyst Certification</h3>
-            <p>Data analysis and problem-solving skills.</p>
-            <div class="proj-meta">
-              <span>Analytics</span><span>Data</span>
-            </div>
+            <h3>FSD Training — Novitech</h3>
+            <p>Full stack development training certificate from Novitech.</p>
+            <div class="proj-meta"><span>FSD</span><span>Web</span></div>
+            <button class="view-details-btn open-modal-btn">View Details</button>
+          </div>
+        </article>
+
+        <article class="project-card hover-tilt" data-type="web" data-title="Full Stack Development Certificate — Launched Global" data-description="Web development certificate from Launched Global included as part of the portfolio credential set." data-image="assets/cert-fsd-launched-global.png" data-tech="Web Development,Full Stack,Launched Global" data-link="certificates/Gokul-FSD%20CERTIFICATE(LAUNCHED%20GLOBAL).pdf" data-link-label="Open Certificate">
+          <img src="assets/cert-fsd-launched-global.png" alt="Launched Global certificate">
+          <div class="proj-body">
+            <h3>FSD Certificate — Launched Global</h3>
+            <p>Web-development-focused certificate from Launched Global.</p>
+            <div class="proj-meta"><span>Web</span><span>FSD</span></div>
+            <button class="view-details-btn open-modal-btn">View Details</button>
+          </div>
+        </article>
+
+        <article class="project-card hover-tilt" data-type="web" data-title="Full Stack Internship Certificate — Launched Global" data-description="Internship certificate in full stack development from Launched Global, representing applied learning alongside certification work." data-image="assets/cert-fsd-internship-launched-global.png" data-tech="Internship,Full Stack,Launched Global" data-link="certificates/Gokul-FSD%20INTERSHIP%20CERTIFICATE(LAUNCHED%20GLOBAL).pdf" data-link-label="Open Certificate">
+          <img src="assets/cert-fsd-internship-launched-global.png" alt="Full stack internship certificate">
+          <div class="proj-body">
+            <h3>FSD Internship — Launched Global</h3>
+            <p>Internship certificate connected to full stack web development training.</p>
+            <div class="proj-meta"><span>Internship</span><span>FSD</span></div>
             <button class="view-details-btn open-modal-btn">View Details</button>
           </div>
         </article>
 
       </div>
     </section>
-
   </main>
 
-  <!-- MODAL -->
   <div id="modal" class="modal" aria-hidden="true">
     <div class="modal-overlay"></div>
     <div class="modal-inner">
       <button class="modal-close" aria-label="Close modal">&times;</button>
-      <div id="modalContent" class="modal-content">
-        <!-- Content will be populated by JavaScript -->
-      </div>
+      <div id="modalContent" class="modal-content"></div>
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <p>© <span id="year3"></span> Gokul — Projects</p>
     </div>
   </footer>
 
-  <!-- SCRIPT -->
   <script src="script.js"></script>
 </body>
 </html>

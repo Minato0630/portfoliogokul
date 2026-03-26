@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f1022"/>
+      <stop offset="100%" stop-color="#401d2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect x="120" y="110" width="250" height="280" rx="30" fill="#fff4f7" opacity=".95"/>
+  <rect x="410" y="145" width="270" height="210" rx="24" fill="#201c31" stroke="#ff89b5" stroke-width="4"/>
+  <circle cx="215" cy="180" r="38" fill="#ff89b5"/>
+  <rect x="172" y="245" width="145" height="16" rx="8" fill="#d18ca7"/>
+  <rect x="172" y="278" width="112" height="16" rx="8" fill="#d18ca7"/>
+  <rect x="455" y="185" width="82" height="82" rx="16" fill="#7d5cff"/>
+  <rect x="556" y="185" width="82" height="82" rx="16" fill="#42d8ff"/>
+  <rect x="455" y="286" width="183" height="18" rx="9" fill="#ff89b5"/>
+  <text x="70" y="82" fill="#fff4f7" font-size="42" font-family="Segoe UI, Arial, sans-serif" font-weight="700">UI / UX TRAINING</text>
+  <text x="70" y="432" fill="#deb8c6" font-size="28" font-family="Segoe UI, Arial, sans-serif">Layouts • Visual Design • User Experience</text>
+</svg>

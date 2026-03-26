@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Anime Short Video App Showcase</title>
+  <desc id="desc">Stylized showcase graphic for the Anime Short Video App project.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#070b18"/>
+      <stop offset="50%" stop-color="#182d68"/>
+      <stop offset="100%" stop-color="#421d4f"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#12d6ff"/>
+      <stop offset="100%" stop-color="#7c5cff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ff4d5f"/>
+      <stop offset="100%" stop-color="#ff8a3d"/>
+    </linearGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+
+  <circle cx="230" cy="150" r="140" fill="#19c2ff" opacity=".18" filter="url(#blur)"/>
+  <circle cx="900" cy="130" r="120" fill="#7c5cff" opacity=".22" filter="url(#blur)"/>
+  <circle cx="1020" cy="560" r="180" fill="#ff4d5f" opacity=".16" filter="url(#blur)"/>
+
+  <rect x="42" y="34" width="1116" height="64" rx="18" fill="#05070d" fill-opacity=".92" stroke="#23304f"/>
+  <text x="72" y="76" fill="#ff5148" font-size="34" font-family="Segoe UI, Arial, sans-serif" font-weight="700">ANIME SHORTS</text>
+  <text x="928" y="76" fill="#f4f7ff" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="600">Home</text>
+  <text x="1005" y="76" fill="#f4f7ff" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="600">Upload</text>
+  <text x="1096" y="76" fill="#ff615f" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Profile</text>
+
+  <rect x="42" y="122" width="1116" height="470" rx="28" fill="#0b1020" fill-opacity=".4" stroke="#314970"/>
+  <rect x="84" y="154" width="730" height="406" rx="24" fill="#0e1220" stroke="#32476b"/>
+
+  <path d="M180 502C258 418 337 318 404 215C462 127 565 106 647 163C734 223 737 322 692 390C646 461 544 528 379 555C298 568 223 557 180 502Z" fill="#0c1730"/>
+  <path d="M258 512C346 397 426 296 472 225C526 141 617 132 685 191C746 244 746 318 714 377C685 428 622 488 508 530C413 565 315 563 258 512Z" fill="url(#glow)" opacity=".8"/>
+  <path d="M289 497C364 413 443 323 491 264C540 204 617 188 676 237C727 281 726 343 697 390C663 447 593 503 484 533C397 557 327 545 289 497Z" fill="#111827" opacity=".92"/>
+
+  <path d="M642 220C614 236 585 279 576 327C564 389 578 452 606 500C647 470 703 417 718 352C730 299 712 247 677 223C665 215 653 214 642 220Z" fill="#111421"/>
+  <path d="M603 238C579 261 568 291 563 326C557 372 566 421 586 461C633 432 675 389 690 339C702 299 695 264 669 239C651 223 622 220 603 238Z" fill="#17243e"/>
+  <path d="M634 251C620 268 615 287 613 308C610 338 616 370 629 399C660 382 686 349 693 315C699 288 692 265 677 251C666 241 644 240 634 251Z" fill="#f3d0a6"/>
+
+  <path d="M553 264C498 246 458 225 410 194" stroke="#35d8ff" stroke-width="18" stroke-linecap="round" opacity=".85"/>
+  <path d="M522 330C440 327 386 333 310 361" stroke="#e8fbff" stroke-width="13" stroke-linecap="round" opacity=".9"/>
+  <path d="M726 268C792 245 855 253 904 298" stroke="#0d1322" stroke-width="20" stroke-linecap="round" opacity=".75"/>
+  <path d="M731 364C810 416 885 476 963 548" stroke="#131524" stroke-width="26" stroke-linecap="round" opacity=".76"/>
+  <path d="M780 427C855 413 940 432 1054 521" stroke="url(#accent)" stroke-width="16" stroke-linecap="round" opacity=".9"/>
+
+  <rect x="851" y="204" width="240" height="262" rx="26" fill="#0a0d14" fill-opacity=".92" stroke="#27344f"/>
+  <text x="884" y="252" fill="#eff4ff" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Reel Experience</text>
+  <text x="884" y="296" fill="#9bb0d6" font-size="19" font-family="Segoe UI, Arial, sans-serif">Short-form video feed</text>
+  <text x="884" y="328" fill="#9bb0d6" font-size="19" font-family="Segoe UI, Arial, sans-serif">Likes, saves, uploads</text>
+  <text x="884" y="360" fill="#9bb0d6" font-size="19" font-family="Segoe UI, Arial, sans-serif">Auth and profile editing</text>
+  <rect x="884" y="392" width="174" height="40" rx="20" fill="url(#glow)"/>
+  <text x="920" y="419" fill="#08111f" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="800">Anime Short Video App</text>
+
+  <text x="72" y="633" fill="#eef4ff" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700">@gokul33</text>
+</svg>

@@ -108,11 +108,15 @@ function openModal(card) {
 
   const title = card.dataset.title || 'Project';
   const description = card.dataset.description || 'Details coming soon.';
-  const image = card.dataset.image || 'assets/profile1.jpg';
+  const image = card.dataset.image || 'assets/profile.jpg';
   const tech = card.dataset.tech || '';
   const link = card.dataset.link || '#';
+  const linkLabel = card.dataset.linkLabel || 'View Project';
 
   const techTags = tech.split(',').map(t => `<span class="tech-tag">${t.trim()}</span>`).join('');
+  const cta = link === '#'
+    ? `<span class="modal-note">No external link was provided for this item.</span>`
+    : `<a href="${link}" class="modal-link" target="_blank" rel="noopener noreferrer">${linkLabel}</a>`;
 
   modalContent.innerHTML = `
     <div class="modal-image">
@@ -122,7 +126,7 @@ function openModal(card) {
       <h3>${title}</h3>
       <p>${description}</p>
       <div class="modal-tech">${techTags}</div>
-      <a href="${link}" class="modal-link" target="_blank" rel="noopener noreferrer">View Project</a>
+      ${cta}
     </div>
   `;
 
