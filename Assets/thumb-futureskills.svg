@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#131023"/>
+      <stop offset="100%" stop-color="#103850"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <path d="M140 320l120-120 78 78 162-162 159 159" fill="none" stroke="#42d8ff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="260" cy="200" r="18" fill="#ffd166"/>
+  <circle cx="500" cy="116" r="18" fill="#ffd166"/>
+  <circle cx="659" cy="275" r="18" fill="#ffd166"/>
+  <text x="70" y="88" fill="#f6fbff" font-size="42" font-family="Segoe UI, Arial, sans-serif" font-weight="700">FUTURESKILLS</text>
+  <text x="70" y="432" fill="#a4c8e0" font-size="28" font-family="Segoe UI, Arial, sans-serif">Professional Growth • Technical Upskilling</text>
+</svg>

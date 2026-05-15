@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#09111f"/>
+      <stop offset="100%" stop-color="#24123d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="640" cy="110" r="52" fill="#ff5a8a" opacity=".25"/>
+  <circle cx="155" cy="365" r="76" fill="#3bd9ff" opacity=".16"/>
+  <rect x="185" y="165" width="430" height="170" rx="34" fill="#0f1d34" stroke="#7c5cff" stroke-width="4"/>
+  <rect x="245" y="230" width="86" height="20" rx="10" fill="#3bd9ff"/>
+  <rect x="278" y="197" width="20" height="86" rx="10" fill="#3bd9ff"/>
+  <circle cx="510" cy="220" r="18" fill="#ffb84d"/>
+  <circle cx="555" cy="265" r="18" fill="#ff5a8a"/>
+  <circle cx="400" cy="250" r="28" fill="#7c5cff" opacity=".55"/>
+  <text x="70" y="78" fill="#f4f7ff" font-size="40" font-family="Segoe UI, Arial, sans-serif" font-weight="700">RYUK RUNNING GAME</text>
+  <text x="70" y="435" fill="#9cb3da" font-size="28" font-family="Segoe UI, Arial, sans-serif">Java • Endless Runner • Anime-inspired Gameplay</text>
+</svg>

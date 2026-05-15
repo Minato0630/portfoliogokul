@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#061810"/>
+      <stop offset="100%" stop-color="#0d2a1d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <ellipse cx="400" cy="250" rx="140" ry="170" fill="#153b2a" stroke="#54d28d" stroke-width="5"/>
+  <path d="M400 110c-18 42-38 82-38 136 0 62 19 107 38 144 19-37 38-82 38-144 0-54-20-94-38-136z" fill="#54d28d"/>
+  <path d="M400 117c9 52 12 103 12 152 0 54-4 102-12 130-8-28-12-76-12-130 0-49 3-100 12-152z" fill="#d2ffe5" opacity=".7"/>
+  <text x="70" y="88" fill="#f1fff7" font-size="42" font-family="Segoe UI, Arial, sans-serif" font-weight="700">MONGODB BASICS</text>
+  <text x="70" y="432" fill="#97cfae" font-size="28" font-family="Segoe UI, Arial, sans-serif">NoSQL • CRUD • Database Fundamentals</text>
+</svg>
